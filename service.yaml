@@ -5,7 +5,8 @@ metadata:
 spec:
   selector:
     app: service-portal
+  type: LoadBalancer
   ports:
   - protocol: TCP
-    port: 80
-    targetPort: 5000  # Match the containerPort from the Deployment
+    port: 5000
+    targetPort: 7070  # Match the containerPort from the Deployment
