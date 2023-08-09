@@ -8,5 +8,5 @@ spec:
   type: LoadBalancer
   ports:
   - protocol: TCP
-    port: 5000
+    port: 7070
     targetPort: 7070  # Match the containerPort from the Deployment
