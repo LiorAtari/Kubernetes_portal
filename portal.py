@@ -8,7 +8,7 @@ app = Flask(__name__)
 def index():
     try:
         # Load Kubernetes configuration
-        config.load_kube_config()
+        config.load_incluster_config()
 
         # Create a Kubernetes API client
         api_instance = client.CoreV1Api()
