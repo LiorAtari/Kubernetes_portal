@@ -13,5 +13,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code into the container
 COPY . .
 
+# Open port 7070 for the container
+EXPOSE 7070
+
 # Define the command to run your application
 CMD ["python", "portal.py"]
