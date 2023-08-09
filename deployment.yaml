@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-portal
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: service-portal
+  template:
+    metadata:
+      labels:
+        app: service-portal
+    spec:
+      containers:
+      - name: service-portal
+        image: your-image-name:your-image-tag
+        ports:
+        - containerPort: 5000  # Assuming your Flask app runs on port 5000
