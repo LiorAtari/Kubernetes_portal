@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service List</title>
+</head>
+<body>
+    <h1>Service List</h1>
+    <ul>
+        {% for service in services %}
+            <li>
+                <p>Service Name: {{ service.name }}</p>
+                <p>Service IP: {{ service.ip }}</p>
+                <p>Service Port: {{ service.port }}</p>
+                <p><a href="http://{{ service.ip }}:{{ service.port }}" target="_blank">Open {{ service.name }}</a></p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
