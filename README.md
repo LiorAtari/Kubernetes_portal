@@ -1,8 +1,8 @@
 # Kubernetes cluster web portal
 
-This web portal provides basic information on all of the services running on your Kubernetes cluster.
+This web portal provides information on all of the services running on your Kubernetes cluster.
 This information includes - 
-1. The IP and port number of the service
+1. The IP and port number of the every service in every namespace
 2. An HTML link to open that service in a new tab.
 
 ## Deployment steps
