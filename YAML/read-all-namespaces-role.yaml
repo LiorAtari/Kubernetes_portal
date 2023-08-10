@@ -4,5 +4,5 @@ metadata:
   name: read-all-namespaces-role
 rules:
 - apiGroups: [""]
-  resources: ["pods", "services"] # Add more resources as needed
+  resources: ["pods", "services", "namespaces"] # Add more resources as needed
   verbs: ["get", "list"]
