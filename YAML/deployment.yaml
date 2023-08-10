@@ -1,19 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: service-portal
+  name: cluster-portal
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: service-portal
+      app: cluster-portal
   template:
     metadata:
       labels:
-        app: service-portal
+        app: cluster-portal
     spec:
+      serviceAccountName: cluster-portal-sa
       containers:
-      - name: service-portal
-        image: lioratari/kubernetes-portal:latest
-        ports:
-        - containerPort: 7070
+        - name: cluster-portal
+          image: yovelchen/portal-app:latest
+          ports:
+            - containerPort: 7070
+    
