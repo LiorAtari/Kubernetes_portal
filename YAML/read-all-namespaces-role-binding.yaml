@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: read-all-namespaces-role-binding
+subjects:
+- kind: ServiceAccount
+  name: cluster-portal-sa # Change this to your ServiceAccount name
+  namespace: cluster-portal # Change this to your ServiceAccount's namespace
+roleRef:
+  kind: ClusterRole
+  name: read-all-namespaces-role
+  apiGroup: rbac.authorization.k8s.io
