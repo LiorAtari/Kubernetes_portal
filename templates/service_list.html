@@ -11,7 +11,7 @@
                 <p>Service Name: {{ service.name }}</p>
                 <p>Service IP: {{ service.ip }}</p>
                 <p>Service Port: {{ service.port }}</p>
-                <p><a href="http://{{ service.ip }}:{{ service.port }}" target="_blank">Open {{ service.name }}</a></p>
+                <p><a href="http://localhost:{{ service.port }}" target="_blank">Open {{ service.name }}</a></p>
             </li>
         {% endfor %}
     </ul>
