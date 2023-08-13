@@ -15,7 +15,7 @@ spec:
       serviceAccountName: cluster-portal-sa
       containers:
         - name: cluster-portal
-          image: yovelchen/portal-app:latest
+          image: lioratari/portal-app:latest
           ports:
             - containerPort: 7070
     
