@@ -4,7 +4,7 @@
 
 This web portal provides information on all of the services running on your Kubernetes cluster.
 This information includes - 
-1. The IP and port number of the every service in every namespace
+1. The IP and port number of every service in every namespace
 2. An HTML link to open that service in a new tab.
 
 ## Deployment steps
@@ -16,7 +16,7 @@ To deploy on ArgoCD, Open the UI and create a new app with the following fields:
 ```
 Application Name: cluster-portal  
 Project Name: default  
-SYNC POLICY: Which ever you like  
+SYNC POLICY: Whichever you like  
 AUTO-CREATE NAMESPACE: Check  
 Repository URL: https://github.com/LiorAtari/Kubernetes_portal.git  
 Path: ./YAML  
